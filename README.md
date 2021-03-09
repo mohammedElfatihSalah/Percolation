@@ -5,44 +5,9 @@ Researchers are interested in the following question:
 
 ## Modules in the project
 - Percolation.java
-    creates n-by-n grid, with all sites initially blocked
-    public Percolation(int n)
-    
-    // opens the site (row, col) if it is not open already
-    public void open(int row, int col)
-
-    // is the site (row, col) open?
-    public boolean isOpen(int row, int col)
-
-    // is the site (row, col) full?
-    public boolean isFull(int row, int col)
-
-    // returns the number of open sites
-    public int numberOfOpenSites()
-
-    // does the system percolate?
-    public boolean percolates()
-    
+    creates n-by-n grid, with all sites initially blocked 
  - PercolationStats.java
- 
-   // perform independent trials on an n-by-n grid
-    public PercolationStats(int n, int trials)
-
-    // sample mean of percolation threshold
-    public double mean()
-
-    // sample standard deviation of percolation threshold
-    public double stddev()
-
-    // low endpoint of 95% confidence interval
-    public double confidenceLo()
-
-    // high endpoint of 95% confidence interval
-    public double confidenceHi()
-    
   PercolationStats performs a monteCarlo Simulaton to estimate P*, when running PercolationStats.java provide n and t as an argument for
   the main method. n is the size of the grid and t is the number of trials.
-  
-  
  - algs4.jar includes an implementation to WeightedQuickFind
 
